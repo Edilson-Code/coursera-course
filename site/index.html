@@ -5,10 +5,18 @@
     <title>Hello Coursera!</title>
 
     <style>
-        p{
-            color:blue;
-            font-size: 20px;
-            width: 500px;
+
+        div > ul{
+            font-size: 24px;
+            font-style: oblique;
+        }
+        section > div{
+            color:darkcyan;
+            font-size: 24px;
+            background-color: gold;
+        }
+        p.big{
+            font-size: 50px;
         }
         h1{
             color:green;
@@ -32,13 +40,23 @@
             background-color: aquamarine;
             opacity: .7;
         }
+        div > p{
+            color: blue;
+        }
     </style>
 </head>
 <body>
+
+    <div>
+        <div>
+            <div class="makeMeBlue"></div>
+        </div>
+    </div>
+
     <h1 class="fontChange" id="colorPurple">Hello Coursera! It's a great course!</h1>
     <h2>have a good day bro!!</h2>
     <h3>time to go to gym</h3>
-    <p>A little about css with Style on file html</p>
+    <p class="big">A little about css with Style on file html</p>
 
     <hr>
     <h1>One More TEST!</h1>
@@ -46,14 +64,14 @@
 
     <hr>
     <div class="highlight">*** DIV 1: Some content here ***</div>
-    <div>*** DIV 2: Following right after div 1 ***</div>
+    <div><p>*** DIV 2: Following right after div 1 ***</p></div>
     <span>*** SPAN 1: Following right after div 2 ***</span>
     <div>
         *** DIV3: Following right after span 1
         <span>*** SPAN 2: INSIDE div 3</span>
         Continue content of div 3 ***
     </div>
-
+    
     <hr>
     <a>I Love <div>Gardening<span>!</span></div></a>
 
@@ -100,7 +118,7 @@
     <hr>
 
     <h1>Internal Links</h1>
-    <section>
+    <section class="highlight">
         We can link to a file in the same directory as this HTML file
         like this:
         <a href="same-directory.html" title="same dir link">Linking 
